@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Inertia\Inertia;
 
 class EventosController extends Controller
@@ -10,8 +11,14 @@ class EventosController extends Controller
     
     public function  index()
     {
-        $val = auth()->user()->name;
+        $unidad = auth()->user()->unidad;
 
-        return Inertia::render('Eventos',['id'=>$val]);
+        //busco los eventos para generar la tabla
+
+                $eventos = DB::table('eventos')
+                ->where('anual', '=', 2022)
+                ->where('adscripcion', '=', $unidad)
+                ->get();
+        return Inertia::render('Eventos',['eventos'=>$eventos]);
     }
 }
