@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\EventosController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -24,6 +25,29 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
+
+
+Route::get('/eventos', [EventosController::class, 'index'])->middleware(['auth', 'verified'])->name('eventos');
+
+Route::get('/pec', function()
+{
+    return Inertia::render('Pec');
+})->middleware(['auth', 'verified'])->name('pec');
+
+Route::get('/continua', function()
+{
+    return Inertia::render('Continua');
+})->middleware(['auth', 'verified'])->name('continua');
+
+Route::get('/becas', function()
+{
+    return Inertia::render('Becas');
+})->middleware(['auth', 'verified'])->name('becas');
+
+Route::get('/soporte', function()
+{
+    return Inertia::render('Soporte');
+})->name('soporte');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

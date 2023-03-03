@@ -25,6 +25,23 @@ const showingNavigationDropdown = ref(false);
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Inicio
                                 </NavLink>
+                                <NavLink :href="route('pec')" :active="route().current('pec')">
+                                    PEC
+                                </NavLink>
+                                <NavLink :href="route('eventos')" :active="route().current('eventos')">
+                                    Eventos
+                                </NavLink>
+                                <NavLink :href="route('continua')" :active="route().current('continua')">
+                                    E. Continua
+                                </NavLink>
+                                <NavLink :href="route('becas')" :active="route().current('becas')">
+                                    Becas
+                                </NavLink>
+                                <NavLink :href="route('soporte')" :active="route().current('soporte')">
+                                    Soporte
+                                </NavLink>
+                               
+                                
                             </div>
                         </div>
 
@@ -106,7 +123,22 @@ const showingNavigationDropdown = ref(false);
                 >
                     <div class="pt-2 pb-3 space-y-1">
                         <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                            Dashboard
+                            Inicio
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                            Inicio
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                            Inicio
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                            Inicio
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                            Inicio
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                            Inicio
                         </ResponsiveNavLink>
                     </div>
 
