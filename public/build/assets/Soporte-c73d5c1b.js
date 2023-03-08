@@ -1,0 +1,1 @@
+import{_ as a}from"./AuthenticatedLayout-0debc15d.js";import{f as t,a as e,u as s,w as o,F as r,o as n,X as _,b as c}from"./app-5ada0853.js";const l=c("div",{class:"py-12"}," tabla ",-1),d={__name:"Soporte",setup(m){return(p,u)=>(n(),t(r,null,[e(s(_),{title:"Eventos"}),e(a,null,{default:o(()=>[l]),_:1})],64))}};export{d as default};

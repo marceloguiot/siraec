@@ -1,0 +1,1 @@
+import{_ as a}from"./AuthenticatedLayout-0debc15d.js";import{f as t,a as e,u as s,w as o,F as r,o as c,X as n,b as _}from"./app-5ada0853.js";const l=_("div",{class:"py-12"}," tabla ",-1),d={__name:"Pec",setup(m){return(u,f)=>(c(),t(r,null,[e(s(n),{title:"Eventos"}),e(a,null,{default:o(()=>[l]),_:1})],64))}};export{d as default};

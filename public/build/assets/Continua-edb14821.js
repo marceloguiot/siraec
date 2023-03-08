@@ -1,0 +1,1 @@
+import{_ as e}from"./AuthenticatedLayout-0debc15d.js";import{f as t,a,u as s,w as o,F as n,o as r,X as _,b as c}from"./app-5ada0853.js";const l=c("div",{class:"py-12"}," tabla ",-1),d={__name:"Continua",setup(u){return(i,m)=>(r(),t(n,null,[a(s(_),{title:"Eventos"}),a(e,null,{default:o(()=>[l]),_:1})],64))}};export{d as default};
