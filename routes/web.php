@@ -28,6 +28,8 @@ Route::get('/', function () {
 
 
 Route::get('/eventos', [EventosController::class, 'index'])->middleware(['auth', 'verified'])->name('eventos');
+Route::get('/eventos-detalle/{id}', [EventosController::class, 'detalles'])->middleware(['auth', 'verified'])->name('eventosdet');
+Route::get('/subir-part/{id}', [EventosController::class, 'subir'])->middleware(['auth', 'verified'])->name('subirpart');
 
 Route::get('/pec', function()
 {
